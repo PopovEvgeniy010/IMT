@@ -1,10 +1,9 @@
 public
-class BmiService {
-    double calculate(int weihgt) {
-        double growth = 1.83 * 1.83;
-                double IMT = weihgt / growth;
+class BmiService<imt> {
+    double calculate(int weihgt, double growth) {
+        double IMT = weihgt / growth;
         return (IMT);
     }
-}
 
+}
 
